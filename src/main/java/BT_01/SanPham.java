@@ -4,11 +4,13 @@
  */
 package BT_01;
 
+import java.io.Serializable;
+
 /**
  *
  * @author ADMIN
  */
-public class SanPham {
+public class SanPham implements Serializable{
     private String maso;
     private String ten;
     private float gia;
@@ -45,8 +47,6 @@ public class SanPham {
     @Override
     public String toString() {
         return ("maso"+getMaso()+";"+"ten"+getTen()+";"+getGia()+";"+"gia");
-        
-        
     }
         
 }
